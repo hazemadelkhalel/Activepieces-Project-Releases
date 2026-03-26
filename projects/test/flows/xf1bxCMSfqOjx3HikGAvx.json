@@ -1,22 +1,22 @@
 {
-  "id": "sa45DpyANZAyowGquKTzz",
-  "created": "2026-03-26T12:51:37.944Z",
-  "updated": "2026-03-26T12:59:37.657Z",
+  "id": "A2mzIpS24K0B9j2lUZLxC",
+  "created": "2026-03-26T13:11:05.107Z",
+  "updated": "2026-03-26T13:13:01.611Z",
   "projectId": "qYKhZlnsdJDSacw3pxqXI",
   "externalId": "xf1bxCMSfqOjx3HikGAvx",
-  "ownerId": "s6BpKY49dlGN1gb0oDnC0",
+  "ownerId": null,
   "folderId": null,
   "status": "ENABLED",
-  "publishedVersionId": "7JgYdh7S5AGZmm4NvTK8s",
+  "publishedVersionId": "XkiuYO8OVi096rmcXv33G",
   "metadata": null,
   "operationStatus": "NONE",
   "timeSavedPerRun": null,
   "templateId": null,
   "version": {
-    "id": "7JgYdh7S5AGZmm4NvTK8s",
-    "created": "2026-03-26T12:51:37.948Z",
-    "updated": "2026-03-26T12:59:37.179Z",
-    "flowId": "sa45DpyANZAyowGquKTzz",
+    "id": "XkiuYO8OVi096rmcXv33G",
+    "created": "2026-03-26T13:12:19.747Z",
+    "updated": "2026-03-26T13:12:57.567Z",
+    "flowId": "A2mzIpS24K0B9j2lUZLxC",
     "displayName": "Test Table",
     "trigger": {
       "name": "trigger",
@@ -27,7 +27,7 @@
         "valid": true,
         "displayName": "Find Records",
         "skip": false,
-        "lastUpdatedDate": "2026-03-26T12:58:42.908Z",
+        "lastUpdatedDate": "2026-03-26T13:12:43.559Z",
         "type": "PIECE",
         "settings": {
           "propertySettings": {
@@ -48,7 +48,7 @@
                           {
                             "label": "Name",
                             "value": {
-                              "id": "GVfQMGnH7x6TFa8MrPHRM",
+                              "id": "OodkLoZUb04AydqdnJolU",
                               "name": "Name",
                               "type": "TEXT"
                             }
@@ -56,7 +56,7 @@
                           {
                             "label": "Email",
                             "value": {
-                              "id": "Smr7aYRA5aKG5YlE6qstg",
+                              "id": "GolWbPaq09uJTR49yQSXP",
                               "name": "Email",
                               "type": "TEXT"
                             }
@@ -68,7 +68,7 @@
                     },
                     "value": {
                       "type": "SHORT_TEXT",
-                      "required": true,
+                      "required": false,
                       "displayName": "Value"
                     },
                     "operator": {
@@ -102,6 +102,14 @@
                           {
                             "label": "Contains",
                             "value": "co"
+                          },
+                          {
+                            "label": "Exists",
+                            "value": "exists"
+                          },
+                          {
+                            "label": "Does not exist",
+                            "value": "not_exists"
                           }
                         ]
                       },
@@ -118,7 +126,7 @@
             }
           },
           "pieceName": "@activepieces/piece-tables",
-          "pieceVersion": "0.2.16",
+          "pieceVersion": "0.2.18",
           "actionName": "tables-find-records",
           "input": {
             "limit": "",
@@ -126,7 +134,7 @@
               "filters": [
                 {
                   "field": {
-                    "id": "GVfQMGnH7x6TFa8MrPHRM",
+                    "id": "OodkLoZUb04AydqdnJolU",
                     "name": "Name",
                     "type": "TEXT"
                   },
@@ -147,7 +155,7 @@
           }
         }
       },
-      "lastUpdatedDate": "2026-03-26T12:59:35.548Z",
+      "lastUpdatedDate": "2026-03-26T13:12:19.757Z",
       "type": "PIECE_TRIGGER",
       "settings": {
         "propertySettings": {
