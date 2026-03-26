@@ -1,0 +1,17 @@
+{
+  "id": "XxES6xEi9fyhVDk9WM5ck",
+  "name": "Table1",
+  "externalId": "ontOf36fXfozWTqOehz0Y",
+  "fields": [
+    {
+      "name": "Name",
+      "type": "TEXT",
+      "externalId": "OodkLoZUb04AydqdnJolU"
+    },
+    {
+      "name": "Email",
+      "type": "TEXT",
+      "externalId": "GolWbPaq09uJTR49yQSXP"
+    }
+  ]
+}
