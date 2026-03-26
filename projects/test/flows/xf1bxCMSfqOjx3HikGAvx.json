@@ -1,0 +1,178 @@
+{
+  "id": "sa45DpyANZAyowGquKTzz",
+  "created": "2026-03-26T12:51:37.944Z",
+  "updated": "2026-03-26T12:59:37.657Z",
+  "projectId": "qYKhZlnsdJDSacw3pxqXI",
+  "externalId": "xf1bxCMSfqOjx3HikGAvx",
+  "ownerId": "s6BpKY49dlGN1gb0oDnC0",
+  "folderId": null,
+  "status": "ENABLED",
+  "publishedVersionId": "7JgYdh7S5AGZmm4NvTK8s",
+  "metadata": null,
+  "operationStatus": "NONE",
+  "timeSavedPerRun": null,
+  "templateId": null,
+  "version": {
+    "id": "7JgYdh7S5AGZmm4NvTK8s",
+    "created": "2026-03-26T12:51:37.948Z",
+    "updated": "2026-03-26T12:59:37.179Z",
+    "flowId": "sa45DpyANZAyowGquKTzz",
+    "displayName": "Test Table",
+    "trigger": {
+      "name": "trigger",
+      "valid": true,
+      "displayName": "Manual Trigger",
+      "nextAction": {
+        "name": "step_1",
+        "valid": true,
+        "displayName": "Find Records",
+        "skip": false,
+        "lastUpdatedDate": "2026-03-26T12:58:42.908Z",
+        "type": "PIECE",
+        "settings": {
+          "propertySettings": {
+            "limit": {
+              "type": "MANUAL"
+            },
+            "filters": {
+              "type": "MANUAL",
+              "schema": {
+                "filters": {
+                  "type": "ARRAY",
+                  "required": false,
+                  "properties": {
+                    "field": {
+                      "type": "STATIC_DROPDOWN",
+                      "options": {
+                        "options": [
+                          {
+                            "label": "Name",
+                            "value": {
+                              "id": "GVfQMGnH7x6TFa8MrPHRM",
+                              "name": "Name",
+                              "type": "TEXT"
+                            }
+                          },
+                          {
+                            "label": "Email",
+                            "value": {
+                              "id": "Smr7aYRA5aKG5YlE6qstg",
+                              "name": "Email",
+                              "type": "TEXT"
+                            }
+                          }
+                        ]
+                      },
+                      "required": true,
+                      "displayName": "Field"
+                    },
+                    "value": {
+                      "type": "SHORT_TEXT",
+                      "required": true,
+                      "displayName": "Value"
+                    },
+                    "operator": {
+                      "type": "STATIC_DROPDOWN",
+                      "options": {
+                        "options": [
+                          {
+                            "label": "Equals",
+                            "value": "eq"
+                          },
+                          {
+                            "label": "Not Equals",
+                            "value": "neq"
+                          },
+                          {
+                            "label": "Greater Than",
+                            "value": "gt"
+                          },
+                          {
+                            "label": "Greater Than or Equal",
+                            "value": "gte"
+                          },
+                          {
+                            "label": "Less Than",
+                            "value": "lt"
+                          },
+                          {
+                            "label": "Less Than or Equal",
+                            "value": "lte"
+                          },
+                          {
+                            "label": "Contains",
+                            "value": "co"
+                          }
+                        ]
+                      },
+                      "required": true,
+                      "displayName": "Operator"
+                    }
+                  },
+                  "displayName": "Filters"
+                }
+              }
+            },
+            "table_id": {
+              "type": "MANUAL"
+            }
+          },
+          "pieceName": "@activepieces/piece-tables",
+          "pieceVersion": "0.2.16",
+          "actionName": "tables-find-records",
+          "input": {
+            "limit": "",
+            "filters": {
+              "filters": [
+                {
+                  "field": {
+                    "id": "GVfQMGnH7x6TFa8MrPHRM",
+                    "name": "Name",
+                    "type": "TEXT"
+                  },
+                  "value": "hahah",
+                  "operator": "eq"
+                }
+              ]
+            },
+            "table_id": "ontOf36fXfozWTqOehz0Y"
+          },
+          "errorHandlingOptions": {
+            "continueOnFailure": {
+              "value": false
+            },
+            "retryOnFailure": {
+              "value": false
+            }
+          }
+        }
+      },
+      "lastUpdatedDate": "2026-03-26T12:59:35.548Z",
+      "type": "PIECE_TRIGGER",
+      "settings": {
+        "propertySettings": {
+          "markdown": {
+            "type": "MANUAL"
+          }
+        },
+        "pieceName": "@activepieces/piece-manual-trigger",
+        "pieceVersion": "0.0.5",
+        "triggerName": "manual_trigger",
+        "input": {
+          "markdown": ""
+        }
+      }
+    },
+    "updatedBy": "s6BpKY49dlGN1gb0oDnC0",
+    "valid": true,
+    "schemaVersion": "18",
+    "agentIds": [],
+    "state": "LOCKED",
+    "connectionIds": [],
+    "backupFiles": null,
+    "notes": []
+  },
+  "triggerSource": {
+    "schedule": null
+  }
+}
